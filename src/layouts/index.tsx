@@ -1,4 +1,4 @@
-import { Footer } from '@/components/ui/Footer';
+import Footer from '@/components/ui/Footer';
 import Head from 'next/head';
 
 type LayoutProps = {

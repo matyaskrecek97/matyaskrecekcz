@@ -4,9 +4,12 @@ export const LINKS = {
       SRC: '/matyas-krecek-osobni-foto-2022-circle-500x500.png',
       ALT: 'Matyáš Kreček osobní foto 2022',
     },
+    EXTERNAL: {
+      THEYSAIDSO: 'https://theysaidso.com/branding/theysaidso.png',
+    },
   },
   EXTERNAL: {
-    ZENQUOTES: 'https://zenquotes.io/',
+    THEYSAIDSO: 'https://quotes.rest/',
   },
   COMPANY: {
     MATYAS_KRECEK_SRO:
