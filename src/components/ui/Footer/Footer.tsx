@@ -1,14 +1,16 @@
 import { LINKS } from '@/constants/links';
 import { ROUTES } from '@/constants/routes';
 import Link from 'next/link';
+import { FooterQuote } from './FooterQuote';
+import useQuote from './useQuote';
 
 export const Footer = () => {
+  const { quote } = useQuote();
+
   return (
     <footer className="container">
       <hr />
-      <div>
-        <p>Matyáš Křeček s. r. o.</p>
-      </div>
+      <FooterQuote />
       <div>
         <ul>
           <li>
