@@ -1,4 +1,3 @@
-import { Lightbulb } from '@/components/ui/LightBulb';
 import { LINKS } from '@/constants/links';
 import { ROUTES } from '@/constants/routes';
 import Link from 'next/link';
@@ -23,6 +22,15 @@ export const Footer = () => {
           </li>
           <li>
             <a
+              href={LINKS.SOCIAL.TWITTER}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
               href={LINKS.SOCIAL.LINKEDIN}
               target="_blank"
               rel="noopener noreferrer"
@@ -39,12 +47,19 @@ export const Footer = () => {
               Goodreads
             </a>
           </li>
+
+          <li>
+            <a
+              href={LINKS.COMPANY.MATYAS_KRECEK_SRO}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Matyáš Křeček s. r. o.
+            </a>
+          </li>
         </ul>
       </div>
-      <Link href={ROUTES.ADMIN}>Admin</Link>
-      <div>
-        <Lightbulb />
-      </div>
+      <Link href={ROUTES.ADMIN}>Admin area</Link>
     </footer>
   );
 };

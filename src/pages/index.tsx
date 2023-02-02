@@ -1,12 +1,21 @@
 import { LINKS } from '@/constants/links';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       <div>
+        <Image
+          src={LINKS.IMAGES.HOMEPAGE_PERSONAL.SRC}
+          alt={LINKS.IMAGES.HOMEPAGE_PERSONAL.ALT}
+          width={150}
+          height={150}
+        />
         <hgroup>
           <h1>Matyáš Křeček</h1>
-          <h2>Programátor, lezec a milovník knih.</h2>
+          <h2>
+            <code>Programátor</code>, lezec a milovník knih 📚.
+          </h2>
         </hgroup>
         <p>
           Repozitář obsahující zdrojový kód mého osobního webu. Používám ho
@@ -20,43 +29,6 @@ export default function Home() {
           jsem implementoval, takže neváhejte mě kontaktovat nebo rovnou otevřít
           issue/pull request.
         </p>
-      </div>
-      <div>
-        <figure>
-          <p>
-            <b>Náhodný citát pro (snad) lepší den:</b>
-          </p>
-          {/* implement https://zenquotes.io/ */}
-          <blockquote>
-            <p>
-              It was a bright cold day in April, and the clocks were striking
-              thirteen.
-            </p>
-          </blockquote>
-          <figcaption>
-            First sentence in{' '}
-            <cite>
-              <a
-                href="http://www.george-orwell.org/1984/0.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Nineteen Eighty-Four
-              </a>
-            </cite>{' '}
-            by George Orwell (Part 1, Chapter 1).
-          </figcaption>
-          <p>
-            Zdroj -{' '}
-            <a
-              href={LINKS.EXTERNAL.ZENQUOTES}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Zenquotes.
-            </a>
-          </p>
-        </figure>
       </div>
     </>
   );

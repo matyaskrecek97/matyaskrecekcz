@@ -1,4 +1,12 @@
 body {
   margin-top: 4rem;
-  margin-bottom: 4rem;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  margin: 1rem;
 }
