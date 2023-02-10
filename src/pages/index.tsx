@@ -1,7 +1,5 @@
 import { LINKS } from '@/constants/links';
 import Image from 'next/image';
-import { ROUTES } from '@/constants/routes';
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -99,7 +97,6 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <Link href={ROUTES.ADMIN}>Admin area</Link>
       </div>
     </>
   );
