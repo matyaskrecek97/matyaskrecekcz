@@ -1,5 +1,4 @@
 import { LINKS } from '@/constants/links';
-
 import useQuote from './useQuote';
 
 export const FooterQuote = () => {
